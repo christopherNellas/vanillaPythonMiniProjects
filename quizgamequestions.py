@@ -1,10 +1,13 @@
+score = 0
 def question(order):
+    global score
     if order == 0:
         answer = int(input('''
             First Question:
             What is the sum of 10 + 40? '''))
         if answer == 50:
             print("Correct!")
+            score += 1
         else:
             print("Incorrect!")
     elif order == 1:
@@ -13,6 +16,7 @@ def question(order):
             What is the difference of 50 - 10? '''))
         if answer == 40:
             print("Correct!")
+            score += 1
         else:
             print("Incorrect!")
     elif order == 2:
@@ -21,6 +25,7 @@ def question(order):
             What is the product of 10 x 10? '''))
         if answer == 100:
             print("Correct!")
+            score += 1
         else:
             print("Incorrect!")
     elif order == 3:
@@ -29,5 +34,6 @@ def question(order):
             What is the quotient of 100 / 5? '''))
         if answer == 20:
             print("Correct!")
+            score += 1
         else:
             print("Incorrect!")
